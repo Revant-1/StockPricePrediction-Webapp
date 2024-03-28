@@ -52,7 +52,7 @@ else:
 
     model.compile(loss='mse', optimizer=RMSprop(learning_rate=0.0005), metrics=['mean_absolute_error'])
 
-    model.fit(X, y, epochs=10, batch_size=64)
+    model.fit(X, y, epochs=20, batch_size=64)
 
     # Extend the prediction to next 100 days
     future_time_steps = 100
